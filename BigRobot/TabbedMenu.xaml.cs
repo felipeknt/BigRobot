@@ -10,30 +10,18 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
-using System.Windows.Navigation;
 
 namespace BigRobot
 {
     /// <summary>
-    /// Interação lógica para MainWindow.xam
+    /// Lógica interna para TabbedMenu.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class TabbedMenu : Window
     {
-        public MainWindow()
+        public TabbedMenu()
         {
             InitializeComponent();
-        }
-
-        private void Evento_Toggle(object sender, MouseButtonEventArgs e) {
-           
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            var wi = new TabbedMenu();
-            wi.Show();
         }
     }
 }

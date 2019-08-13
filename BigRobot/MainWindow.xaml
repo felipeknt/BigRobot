@@ -7,17 +7,17 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="531.356" Width="863.559">
     <Grid>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="91,106,0,0" VerticalAlignment="Top" Width="99" RenderTransformOrigin="0.5,0.5" Height="47">
+        <Button Content="Button" HorizontalAlignment="Left" Margin="606,424,0,0" VerticalAlignment="Top" Width="99" RenderTransformOrigin="0.5,0.5" Height="47" Click="Button_Click">
             <Button.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
                     <SkewTransform/>
-                   
+
                     <TranslateTransform/>
                 </TransformGroup>
             </Button.RenderTransform>
         </Button>
-        <local:ToggleButton HorizontalAlignment="Left" x:Name="TogTeste" Height="100" Margin="90,204,0,0" VerticalAlignment="Top" Width="100" MouseLeftButtonDown="Evento_Toggle"/>
+        <local:ToggleButton HorizontalAlignment="Left" x:Name="TogTeste" Height="100" Margin="746,400,0,0" VerticalAlignment="Top" Width="100" MouseLeftButtonDown="Evento_Toggle"/>
 
     </Grid>
 </Window>
