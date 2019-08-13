@@ -24,5 +24,9 @@ namespace BigRobot
         {
             InitializeComponent();
         }
+
+        private void Evento_Toggle(object sender, MouseButtonEventArgs e) {
+           
+        }
     }
 }
