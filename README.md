@@ -1,2 +1,2 @@
 # BigRobot
- Monitoramento em desktop para mqtt
+ Monitoramento em desktop utilizando mqtt
