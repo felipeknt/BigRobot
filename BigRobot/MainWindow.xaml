@@ -5,9 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:BigRobot"
         mc:Ignorable="d"
-        Title="MainWindow" Height="531.356" Width="863.559">
+        Title="MainWindow" Height="531.356" Width="863.559"
+        Background="DarkBlue">
     <Grid>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="606,424,0,0" VerticalAlignment="Top" Width="99" RenderTransformOrigin="0.5,0.5" Height="47" Click="Button_Click">
+        <Button Content="Button" HorizontalAlignment="Left" Margin="721,68,0,0" VerticalAlignment="Top" Width="99" RenderTransformOrigin="0.5,0.5" Height="47" Click="Button_Click">
             <Button.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -17,7 +18,47 @@
                 </TransformGroup>
             </Button.RenderTransform>
         </Button>
-        <local:ToggleButton HorizontalAlignment="Left" x:Name="TogTeste" Height="100" Margin="746,400,0,0" VerticalAlignment="Top" Width="100" MouseLeftButtonDown="Evento_Toggle"/>
+        <local:ToggleButton HorizontalAlignment="Left" x:Name="TogTeste" Height="100" Margin="554,153,0,0" VerticalAlignment="Top" Width="100" MouseLeftButtonDown="Evento_Toggle"/>
+        <Image x:Name="setaCima" HorizontalAlignment="Left" Height="69" Margin="209,228,0,0" VerticalAlignment="Top" Width="78" Source="Imagens/seta.png" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleY="1.135" ScaleX="0.881"/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-90
+                                     "/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image x:Name="setaBaixo" HorizontalAlignment="Left" Height="75" Margin="211,297,0,0" VerticalAlignment="Top" Width="80" Source="Imagens/seta.png" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleY="1.135" ScaleX="0.881"/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="90
+                                     "/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image x:Name="setaDireita" HorizontalAlignment="Left" Height="69" Margin="291,301,0,0" VerticalAlignment="Top" Width="79" Source="Imagens/seta.png"/>
+        <Image x:Name="setaEsquerda" HorizontalAlignment="Left" Height="69" Margin="206,370,0,0" VerticalAlignment="Top" Width="78" Source="Imagens/seta.png" >
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-180"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <local:ToggleButton HorizontalAlignment="Left" x:Name="TogTeste_Copy" Height="100" Margin="554,233,0,0" VerticalAlignment="Top" Width="100" MouseLeftButtonDown="Evento_Toggle"/>
+        <local:ToggleButton HorizontalAlignment="Left" x:Name="TogTeste_Copy1" Height="100" Margin="554,310,0,0" VerticalAlignment="Top" Width="100" MouseLeftButtonDown="Evento_Toggle"/>
+        <local:ToggleButton HorizontalAlignment="Left" x:Name="TogTeste_Copy2" Height="100" Margin="554,390,0,0" VerticalAlignment="Top" Width="100" MouseLeftButtonDown="Evento_Toggle"/>
+        <Label Content="Lampada quarto" HorizontalAlignment="Left" Margin="681,188,0,0" VerticalAlignment="Top"/>
+        <Label Content="Lampada corredor" HorizontalAlignment="Left" Margin="681,270,0,0" VerticalAlignment="Top"/>
+        <Label Content="Lampada cozinha" HorizontalAlignment="Left" Margin="681,344,0,0" VerticalAlignment="Top"/>
+        <Label Content="Lampada Sala" HorizontalAlignment="Left" Margin="681,429,0,0" VerticalAlignment="Top"/>
 
     </Grid>
 </Window>
